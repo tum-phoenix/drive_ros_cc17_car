@@ -1,0 +1,7 @@
+<launch>
+
+    <node name="HeartbeatVisualization" pkg="drive_ros_cc2017_car" type="heartbeat_visualization">
+        <param name="max_voltage" value="10000" />
+        <param name="max_velocity" value="200" />
+    </node>
+</launch> 

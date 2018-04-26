@@ -1,6 +1,8 @@
 #! /usr/bin/env python
-from drive_ros_cc2017_car.heartbeat import HeartbeatVisualization
+import sys
 
-if __name__ == '__main__':
-    HeartbeatVisualization
+from rqt_gui.main import Main
 
+main = Main()
+
+sys.exit(main.main(sys.argv, standalone='drive_ros_cc2017_car.heartbeat.HeartbeatVisualization'))
