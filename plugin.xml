@@ -1,0 +1,19 @@
+<library  path="src">
+  <class name="heartbeat_visualization" type="drive_ros_cc2017_car.heartbeat.HeartbeatVisualization" base_class_type="rqt_gui_py::Plugin">
+    <description>
+     Visualization of data published in mav_cc16_HEARTBEAT.msg
+    </description>
+    <qtgui>
+      <group>
+        <label>Visualization</label>
+      </group>
+      <!-- group>
+        <label>Subgroup</label>
+      </group -->
+
+      <label>Heartbeat Visualization</label>
+      <icon type="theme">system-help</icon>
+      <statustip>visualize mav_cc16_HEARTBEAT.msg</statustip>
+    </qtgui>
+  </class>
+</library>

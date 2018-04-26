@@ -8,6 +8,21 @@ catkin_package(
     CATKIN_DEPENDS
 )
 
+catkin_python_setup()
+
+install(PROGRAMS scripts/heartbeat_visualization
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+install(DIRECTORY
+  resource
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
+
+install(FILES
+  plugin.xml
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
 
 install(DIRECTORY launch/
     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
